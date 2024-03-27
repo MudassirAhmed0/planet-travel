@@ -119,6 +119,15 @@ body {
   transition: 0.5s all;
   overflow: hidden;
 }
+#plusIcon {
+  transition: 0.3s all;
+}
+#plusIcon.active #lineToHide {
+  display: none;
+}
+#plusIcon.active {
+  transform: rotate(90deg);
+}
 
 @media (max-width: 768px) {
   .reviewdes {

@@ -3,6 +3,12 @@
 }
 @font-face {
   font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Light.otf);
+  font-weight: 300;
+  font-display: block;
+}
+@font-face {
+  font-family: "Satoshi";
   src: url(../fonts/Satoshi-Regular.otf);
   font-weight: 400;
   font-display: block;
@@ -76,6 +82,9 @@ a {
   font-size: 3.58945597308vw;
   line-height: 4.29613011778vw;
   font-weight: 700;
+}
+.font28 {
+  font-size: 1.57038698822vw;
 }
 .font24 {
   font-size: 1.3460459899vw;
@@ -437,6 +446,126 @@ nav a:hover {
   margin-bottom: 1vw;
 }
 
+.reviewCard {
+  width: 23.331463825vw;
+  height: 31.8438914027vw;
+  border-radius: 0.84127874369vw;
+  background-color: green;
+  display: flex;
+  align-items: end;
+  padding: 1.2vw;
+  position: relative;
+  font-family: "Roboto";
+  overflow: hidden;
+}
+.reviewMainImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.reviewPlayIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.36511497476vw;
+  height: 3.36511497476vw;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.2vw;
+  right: 1.2vw;
+}
+.reviewPlayIcon img {
+  width: 1.3460459899vw;
+}
+.reviewContent {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.55vw;
+  padding: 1.4vw 1.1vw;
+  box-shadow: 0 2.21px 4.43px 0 #0704921a, 0 26.57px 66.42px 0 #062f7d0d,
+    0 13px 26.57px 0 #1b3b770d;
+}
+.reviewsHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  align-items: center;
+}
+.reviewsHeader img {
+  width: 6.95457094784vw;
+}
+.reviewHeading {
+  font-weight: 500;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.reviewDesc {
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 1vw;
+}
+.reviewDesc::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15%;
+  height: 1px;
+  bottom: 0;
+  background-color: #d9d9d9;
+}
+.reviewer {
+  font-weight: 700;
+  margin-top: 1vw;
+}
+.partnersSwiper .swiper-wrapper {
+  align-items: center;
+}
+.faqContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.faqs {
+  width: 37.1845204711vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.2vw;
+}
+.faqWrapper {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 2.2vw;
+}
+.faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+#plusIcon.active {
+  transform: rotate(90deg);
+}
+#plusIcon.active #plusLine {
+  display: none;
+}
+.faq_answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+.faq_answer p {
+  padding-top: 1.4vw;
+}
+#plusIcon {
+  width: 2.01906898486vw;
+  transition: 0.3s all;
+}
 .cta {
   height: 30.7347167695vw;
   position: relative;
@@ -502,6 +631,9 @@ footer ul li a:hover {
   .font64 {
     font-size: 30px;
     line-height: 40px;
+  }
+  .font28 {
+    font-size: 22px;
   }
   .font24 {
     font-size: 18px;
@@ -672,6 +804,79 @@ footer ul li a:hover {
     width: 100%;
   }
 
+  .reviewCard {
+    width: 60%;
+    height: 300px;
+    padding: 12px 12px;
+    border-radius: 15px;
+  }
+  .reviewPlayIcon {
+    width: 22px;
+    height: 22px;
+    top: 12px;
+    right: 12px;
+  }
+  .reviewPlayIcon img {
+    width: 8px;
+  }
+  .reviewContent {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .reviewsHeader img {
+    width: 60px;
+  }
+  .reviewHeading {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .reviewDesc {
+    padding-bottom: 8px;
+  }
+  .reviewDesc::after {
+    width: 25%;
+  }
+  .reviewer {
+    margin-top: 8px;
+  }
+  .partnersSwiper {
+    width: 100%;
+    padding-left: 5vw;
+  }
+  .partner1 {
+    width: 71px;
+  }
+  .partner2 {
+    width: 187px;
+  }
+  .partner3 {
+    width: 92px;
+  }
+  .partner4 {
+    width: 58px;
+  }
+  .partner5 {
+    width: 188px;
+  }
+
+  .faqContainer {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .faqs {
+    width: 100%;
+    row-gap: 24px;
+  }
+  #plusIcon {
+    width: 24px;
+  }
+  .faqWrapper {
+    padding-bottom: 24px;
+  }
+  .faq_answer p {
+    padding-top: 16px;
+  }
+
   .cta {
     height: 500px;
     border-radius: 10px;
@@ -721,5 +926,20 @@ footer ul li a:hover {
   }
   .headingMaxW2 {
     width: 42.2882781828vw;
+  }
+  .partner1 {
+    width: 4.02722631877vw;
+  }
+  .partner2 {
+    width: 10.4879416713vw;
+  }
+  .partner3 {
+    width: 5.1598429613vw;
+  }
+  .partner4 {
+    width: 3.28984685196vw;
+  }
+  .partner5 {
+    width: 10.4879416713vw;
   }
 }

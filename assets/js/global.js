@@ -1,8 +1,15 @@
 AOS.init({ once: true });
 const gap = (window.innerWidth / 100) * 1.23762376238;
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
-  spaceBetween: gap
+  spaceBetween: gap,
+  centeredSlides: true,
+  loop: true
+});
+const partnersGap = (window.innerWidth / 100) * 9.53449242849;
+const partnersSwiper = new Swiper(".partnersSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: partnersGap
 });
 document.querySelectorAll(".faq").forEach((item) => {
   item.addEventListener("click", () => {

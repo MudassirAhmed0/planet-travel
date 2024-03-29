@@ -1,0 +1,18 @@
+.form-sidebar {
+  bottom: 20px !important;
+}
+#form-builder-items {
+  padding-top: 0 !important;
+  margin-bottom: 20px !important;
+}
+#form-builder-items.fixed {
+  height: 100vh;
+}
+
+.form-builder-menu {
+  padding-bottom: 10px !important;
+  position: sticky !important;
+  top: 0 !important;
+  background: #fff !important;
+  z-index: 222 !important;
+}

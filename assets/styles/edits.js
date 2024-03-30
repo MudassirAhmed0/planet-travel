@@ -5,7 +5,7 @@ const setFormBuilderItemsHeight = () => {
 
     const formBuilderMenu = document.querySelector(".form-builder-menu");
     const formBuilderMenuHeight = formBuilderMenu.offsetHeight;
-
+    console.log(formBuilderMenuHeight);
     const formBuilderItems = document.querySelector("#form-builder-items");
     let newHeight = window.innerHeight - formBuilderMenuHeight - 65 + "px";
     formBuilderItems.style.maxHeight = newHeight;

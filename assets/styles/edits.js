@@ -14,7 +14,7 @@ const setFormBuilderItemsHeight = () => {
     const formBuilderMenuHeight = formBuilderMenu.offsetHeight;
     const margins =
       window.scrollY < 100
-        ? 150
+        ? 130
         : window.scrollY > maxScrollableHeight
         ? 60
         : 30;
